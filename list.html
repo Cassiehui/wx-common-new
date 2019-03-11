@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+		<meta content="telephone=no" name="format-detection">
+	    <title>首页</title>
+	    <link rel="stylesheet" href="css/font-awesome.min.css" />
+	    <link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body bgcolor="#f8f8f8">
+		
+		<!-- 头部 -->
+		<header class="wx-bar">
+			<a href="index.html" class="wx-bar-left"><i class="fa fa-angle-left fa-2x wx-bar-icon"></i></a>
+			<a href="#" class="wx-bar-right">编辑</a>
+			<h1 class="wx-bar-title">列表</h1>
+		</header>
+		
+		<!-- 内容 -->
+		<div class="wx-container">
+			<p class="wx-title">普通列表</p>
+			<!-- 普通列表  -->
+			<div class="wx-list">
+				<ul class="wx-normlist">
+					<!-- 纯文字列表 -->
+					<li class="wx-normlist-cell">
+						列表1
+					</li>
+					<!-- 可点击 带箭头带小数字列表 -->
+					<li class="wx-normlist-cell">
+						<a href="#">
+							列表2
+							<i class="fa fa-angle-right wx-normlist-rtarrow"></i>
+							<span class="wx-number wx-normlist-number">12</span>
+						</a>
+					</li>
+					<!-- 可点击右边带图标列表 -->
+					<li class="wx-normlist-cell">
+						<a href="#">
+							<span class="fa fa-heart wx-normlist-lficon"></span>
+							列表2
+							<i class="fa fa-angle-right wx-normlist-rtarrow"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p class="wx-title">底边没有间隔</p>
+			<!-- 普通列表 底边没有间隔 -->
+			<div class="wx-list">
+				<ul class="wx-normlist wx-allborder-list">
+					<!-- 纯文字列表 -->
+					<li class="wx-normlist-cell">
+						列表1<span class="wx-span-floatright">右边的我</span>
+					</li><li class="wx-normlist-cell">
+						列表1<span class="wx-span-floatright">右边的我</span>
+					</li>
+					<li class="wx-normlist-cell">
+						列表1<span class="wx-span-floatright">右边的我</span>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 地址列表  -->
+			<p class="wx-title">地址列表</p>
+			<div class="wx-list">
+				<ul class="wx-addslist">
+					<!-- one地址列表  不可滑动 -->
+					<li class="wx-addslist-cell">
+						<p class="wx-addslist-title">
+							<span class="name">
+								收货人：哈葛德
+							</span>
+							<span class="tel">
+								15475426593
+							</span>
+						</p>
+						<p class="wx-addslist-adds">
+							收货地址：湖南省长沙市雨花区长沙大道567号34栋8009。
+						</p>
+					</li>
+					<!-- two地址列表  加箭头 -->
+					<li class="wx-addslist-cell wx-haveArrow"> 
+						<p class="wx-addslist-title">
+							<span class="name">
+								收货人：哈葛德
+							</span>
+							<span class="tel">
+								15475426593
+							</span>
+						</p>
+						<p class="wx-addslist-adds">
+							收货地址：湖南省长沙市雨花区长沙大道567号34栋8009。
+						</p>
+						<div class="wx-addslist-arrow">
+							<i class="fa fa-2x fa-angle-right wx-normlist-rtarrow"></i>
+						</div>
+					</li>
+					<!-- two地址列表  可滑动 -->
+					<li class="wx-addslist-cell wx-delete-list"> <!-- 在父元素添加滑动类名 wx-delete-list-->
+						<p class="wx-addslist-title">
+							<span class="name">
+								收货人：哈葛德
+							</span>
+							<span class="tel">
+								15475426593
+							</span>
+						</p>
+						<p class="wx-addslist-adds">
+							收货地址：湖南省长沙市雨花区长沙大道567号34栋8009。
+						</p>
+						<div class="wx-delete">删除</div> <!-- 添加删除盒子 wx-delete  -->
+					</li>
+				</ul>
+			</div>
+			<!-- 商品列表  -->
+			<p class="wx-title">商品列表</p>
+			<div class="wx-list">
+				<ul class="wx-goodslist">
+					<!-- one商品列表  不可滑动 -->
+					<li class="wx-goodslist-cell">
+						<div class="wx-goodslist-head"> <!-- 商品列表头部 没有可以不要 一般为订单号 -->
+							<input type="checkbox"/><span class="goodslist-head-title">订单号：21451452145</span>
+						</div>
+						<!-- 商品列表one  -->
+						<div class="wx-goodslist-content">
+							 <!-- 选框radio  -->
+							<div class="goodslist-content-radio">
+								<input type="checkbox"/>
+							</div>
+							<!-- 商品图片  -->
+							<div class="goodslist-content-img">
+								<img src="img/goods.png" />
+							</div>
+							<!-- 商品名字 价格  -->
+							<div class="goodslist-content-text"> 
+								<p class="content-text-name">日本进口薄型抗菌砧板菜板 切菜板切水果板 料理分离板</p>
+								<p class="content-text-standar">颜色分类:粉色</p>
+								<div class="content-text-price">
+									<span class="wx-goodslist-price">￥<b>294519.9</b></span>
+									<!-- 数字输入框  -->
+									<div class="wx-goodslist-num"> 
+										<button class="reduce">-</button>
+										<input type="text" class="numbox" value="1"/>
+										<button class="plus">+</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- 商品列表one  end-->
+					</li>
+					
+					<!-- two商品列表  可滑动 -->
+					<li class="wx-goodslist-cell">
+						<div class="wx-goodslist-head"> <!-- 商品列表头部 没有可以不要 一般为订单号 -->
+							<input type="checkbox"/><span class="goodslist-head-title">订单号：21451452145</span>
+						</div>
+						<!-- 商品列表one  -->
+						<div class="wx-goodslist-content wx-delete-list"> <!-- 在父元素添加滑动类名 wx-delete-list-->
+							 <!-- 选框radio  -->
+							<div class="goodslist-content-radio">
+								<input type="checkbox"/>
+							</div>
+							<!-- 商品图片  -->
+							<div class="goodslist-content-img">
+								<img src="img/goods.png" />
+							</div>
+							<!-- 商品名字 价格  -->
+							<div class="goodslist-content-text"> 
+								<p class="content-text-name">日本进口薄型抗菌砧板菜板 切菜板切水果板 料理分离板</p>
+								<p class="content-text-standar">颜色分类:粉色</p>
+								<div class="content-text-price">
+									<span class="wx-goodslist-price">￥<b>24519.9</b></span>
+									<!-- 数字输入框  -->
+									<div class="wx-goodslist-num"> 
+										<button class="reduce">-</button>
+										<input type="text" class="numbox" value="1"/>
+										<button class="plus">+</button>
+									</div>
+								</div>
+							</div>
+							<div class="wx-delete">删除</div> <!-- 添加删除盒子 wx-delete  -->
+						</div><!-- 商品列表one  end-->
+						
+						<!-- 商品列表one  -->
+						<div class="wx-goodslist-content wx-delete-list"> <!-- 在父元素添加滑动类名 wx-delete-list-->
+							 <!-- 选框radio  -->
+							<div class="goodslist-content-radio">
+								<input type="checkbox"/>
+							</div>
+							<!-- 商品图片  -->
+							<div class="goodslist-content-img">
+								<img src="img/goods.png" />
+							</div>
+							<!-- 商品名字 价格  -->
+							<div class="goodslist-content-text"> 
+								<p class="content-text-name">日本进口薄型抗菌砧板菜板 切菜板切水果板 料理分离板</p>
+								<p class="content-text-standar">颜色分类:粉色</p>
+								<div class="content-text-price">
+									<span class="wx-goodslist-price">￥<b>24519.9</b></span>
+									<!-- 数字输入框  -->
+									<div class="wx-goodslist-num"> 
+										<button class="reduce">-</button>
+										<input type="text" class="numbox" value="1"/>
+										<button class="plus">+</button>
+									</div>
+								</div>
+							</div>
+							<div class="wx-delete">删除</div> <!-- 添加删除盒子 wx-delete  -->
+						</div><!-- 商品列表one  end-->
+						
+					</li>
+				</ul>
+			</div><!-- 商品列表  end -->
+			
+			<!-- 图文列表 -->
+			<p class="wx-title">图文列表</p>
+			<div class="wx-list">
+				<ul class="wx-imgtext-list">
+					<!--one 图文列表 -->
+					<li class="wx-imgtext-cell">
+						<a href="#">
+							<img src="img/gallery-7.jpg"/>
+							<div class="wx-imgtext-word">
+								<h4>标题我是</h4>
+								<p>每天都要写内容，是不是很累，为什么要写每天都要写内容，是不是很累，为什么要写每天都要写内容，是不是很累，为什么要写</p>
+							</div>
+						</a>
+					</li>
+					
+					<!--one 图文列表 -->
+					<li class="wx-imgtext-cell">
+						<a href="#">
+							<img src="img/gallery-7.jpg"/>
+							<div class="wx-imgtext-word">
+								<h4>标题我是</h4>
+								<p>每天都要写内容，是不是很累，为什么要写每天都要写内容，是不是很累，为什么要写每天都要写内容，是不是很累，为什么要写</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div><!-- 图文列表  end -->
+			
+			
+		</div><!-- 内容 end-->
+		
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</body>
+</html>

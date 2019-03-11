@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+		<meta content="telephone=no" name="format-detection">
+	    <title>首页</title>
+	    <link rel="stylesheet" href="css/font-awesome.min.css" />
+	    <link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body bgcolor="#f8f8f8">
+		
+		<!-- 头部 -->
+		<header class="wx-bar">
+			<a href="index.html" class="wx-bar-left"><i class="fa fa-angle-left fa-2x"></i></a>
+			<a href="#" class="wx-bar-right"></a>
+			<h1 class="wx-bar-title">选框</h1>
+		</header>
+		
+		<!-- 内容 -->
+		<div class="wx-container">
+			<!-- 复选框 -->
+			
+			<p class="wx-title">默认蓝色复选框</p>
+			<div class="wx-list">
+				<ul class="wx-normlist">
+					<li class="wx-normlist-cell">
+						<input type="checkbox" checked="checked"/>
+						<span class="wx-span-padleft"> 蓝色选框1</span>
+					</li>
+					<li class="wx-normlist-cell">
+						<input type="checkbox"/>
+						<span class="wx-span-padleft"> 蓝色选框2</span>
+					</li>
+					<!-- 可点击右边带图标列表 -->
+					<li class="wx-normlist-cell wx-disabled">
+						<input type="checkbox" disabled="disabled"/>
+						<span class="wx-span-padleft"> 禁用蓝色选框3</span>
+					</li>
+				</ul>
+			</div>
+			<p class="wx-title">红色复选框</p>
+			<div class="wx-list">
+				<ul class="wx-normlist">
+					<li class="wx-normlist-cell">
+						<input type="checkbox" class="wx-red-checkbox wx-checkbox-right" checked="checked"/>
+						<span> 红色选框1</span>
+					</li>
+					<li class="wx-normlist-cell">
+						<input type="checkbox" class="wx-red-checkbox wx-checkbox-right"/>
+						<span> 红色选框2</span>
+					</li>
+					<!-- 可点击右边带图标列表 -->
+					<li class="wx-normlist-cell wx-disabled">
+						<input type="checkbox" class="wx-red-checkbox wx-checkbox-right" disabled="disabled"/>
+						<span> 红色选框3</span>
+					</li>
+				</ul>
+			</div>
+			
+			<p class="wx-title">绿色单选框</p>
+			<div class="wx-list">
+				<ul class="wx-normlist">
+					<li class="wx-normlist-cell">
+						<input type="radio" name="box" value="1" class="wx-green-checkbox wx-checkbox-right" checked="checked"/>
+						<span> 绿色选框1</span>
+					</li>
+					<li class="wx-normlist-cell">
+						<input type="radio" name="box" value="2" class="wx-green-checkbox wx-checkbox-right"/>
+						<span> 绿色选框2</span>
+					</li>
+					<!-- 可点击右边带图标列表 -->
+					<li class="wx-normlist-cell wx-disabled">
+						<input type="radio" class="wx-green-checkbox wx-checkbox-right" disabled="disabled"/>
+						<span> 绿色选框3</span>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>
